@@ -82,7 +82,7 @@ Below you can find a list of all major frameworks/libraries used to bootstrap th
 
 * Python version 3.9 or above
 * Pickle
-* IDE (VS Code, PyCharm, Anaconda, etc.)
+* IDE (VS Code, PyCharm, Thonny etc.)
 
 
 <!-- 
