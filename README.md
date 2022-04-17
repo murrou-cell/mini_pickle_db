@@ -270,10 +270,12 @@ Project Link: [https://github.com/murrou-cell/mini_pickle_db](https://github.com
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Shit I've used 1](link)
+* [Configuration Parser Framework](https://github.com/murrou-cell/configuration_parser)
+<!--
 * [Shit I've used 2](link)
 * [Shit I've used 3](link)
 * [Shit I've used 4](link)
 * [Shit I've used 5](link)
+-->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
