@@ -189,17 +189,17 @@ db.insert(single_doc)
 
   2.4. How to query the database:
 
-    2.4.1. Query a single document: 
-    ```sh
-      db.query_one({'key_2': 'value'})
-    ```
-    Note: It will return only the first document it finds. 
+  2.4.1. Query a single document: 
+  ```sh
+    db.query_one({'key_2': 'value'})
+  ```
+  Note: It will return only the first document it finds. 
 
-    2.4.2. Query a multiple documents:
-    ```sh
-      db.query_many({'key_2': 'value'})
-    ```
-    Note: It will return all the documents matching the querry.
+  2.4.2. Query a multiple documents:
+  ```sh
+    db.query_many({'key_2': 'value'})
+  ```
+  Note: It will return all the documents matching the querry.
 
 
 _For more examples, please refer to the [Documentation](https://docs.python.org/3/library/pickle.html)_
