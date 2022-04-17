@@ -183,7 +183,7 @@ db.insert(single_doc)
 
   2.3. How to load the database: 
   ```sh
-      db.load()
+    db.load()
   ```
   Note: It returns a list of dictionaries. 
 
