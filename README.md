@@ -126,45 +126,80 @@ Here is how to framework actually functions:
 
 1. Initial steps:
 As a start, you must clone the repository and use the pickle_wrapper.py file to import the needed modules as shown below: 
+  ```sh
+  from pickle_wrapper import p_wrapper
+  ```
+  1.1. You can initiate the database class using the: 
+  ```sh
+    db = p_wrapper()
+  ```
+  1.2. You should specify the file path of the database document as shown below: 
+  ```sh
+    db.db_file = 'file_path'
+  ```
+  Note: The Wrapper will automatically create the file, but not the folder, so one must be created manually. 
+
+
+
+2. Document Structure: 
+  2.1. The documents follow a simple Python dictionary format as shown below: 
+      ```sh
+        example_doc = {
+          'key_1': "value_1",
+          "key_2": "value_2"
+          }
+      ```
+
+
+3. Database Usage:
+  2.1. How to insert a single document in the database: 
+      ```sh
+      single_doc = {
+    'key_1': "value_1",
+    'key_2': "value_2"
+    }
+    db.insert(single_doc)
+      ```
+  2.2. How to insert multiple documents in the database: 
     ```sh
-    from pickle_wrapper import p_wrapper
+    multiple_docs = [
+      {
+          'key_1': "value_1",
+          'key_2': "value_2"
+      },
+      {
+          'key_3':  "value_3",
+          'key_4':  "value_4"
+      }
+    ]
+    db.insert(multiple_docs)
     ```
-    1.1. You can initiate the database class using the: 
+  Note: The database automatically assigns an ID to every document and is autoincremented.
     ```sh
-      db = p_wrapper()
+      [{'key_1': "value_1", 'key_2': "value_2", 'id': 0}, {'key_1': "value_1", 'key_2': "value_2", 'id': 1}]
     ```
-    1.2. You should specify the file path of the database document as shown below: 
+  Note: The data type of the multiple document database is a list of dictionaries.
+
+  2.3. How to load the database: 
     ```sh
-      db.db_file = 'file_path'
-    ```
+        db.load()
+      ```
+  Note: It returns a list of dictionaries. 
 
+  2.4. How to query the database:
 
+    2.4.1. Query a single document: 
+      ```sh
+        db.query_one({'key_2': 'value'})
+      ```
+    Note: It will return only the first document it finds. 
 
-2. 
+    2.4.2. Query a multiple documents:
+      ```sh
+        db.query_many({'key_2': 'value'})
+      ```
+    Note: It will return all the documents matching the querry.
 
-
-
-
-The documents follow a simple Python dictionary format as shown below: 
-    ```sh
-      example_doc = {
-        'key_1': "value_1",
-        "key_2": "value_2"
-        }
-    ```
-
-
-3. You should specify the file path of the database document as shown below: 
-```sh
-   db.db_file = 'file_path'
-```
-
-
-
-
-
-4.
-5.  
 
 _For more examples, please refer to the [Documentation](https://docs.python.org/3/library/pickle.html)_
 
