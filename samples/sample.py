@@ -5,7 +5,7 @@ db = p_wrapper()
 
 db_file_path = 'db'
 
-db_file_name = 'simple_db.json'
+db_file_name = 'simple_db.db'
 
 db.db_file = os.path.join(db_file_path, db_file_name)
 
