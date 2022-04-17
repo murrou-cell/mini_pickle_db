@@ -36,16 +36,20 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
     </li>
+    <!--
     <li>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <!--
+        
         <li><a href="#installation">Installation</a></li>
-        -->
+        
       </ul>
     </li>
-    </br>
+    -->
     <li><a href="#usage">Usage</a></li>
     <!--
     <li><a href="#roadmap">Roadmap</a></li>
