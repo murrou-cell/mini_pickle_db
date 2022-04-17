@@ -124,18 +124,47 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Here is how to framework actually functions: 
 
-1. As a start, you must import the following modules: 
-   ```sh
-   from pickle_wrapper import p_wrapper
-   ```
-      ```sh
-   import os
-   ```
+1. Initial steps:
+As a start, you must clone the repository and use the pickle_wrapper.py file to import the needed modules as shown below: 
+    ```sh
+    from pickle_wrapper import p_wrapper
+    ```
+    1.1. You can initiate the database class using the: 
+    ```sh
+      db = p_wrapper()
+    ```
+    1.2. You should specify the file path of the database document as shown below: 
+    ```sh
+      db.db_file = 'file_path'
+    ```
+
+
 
 2. 
-3. 
-4. 
-5. 
+
+
+
+
+The documents follow a simple Python dictionary format as shown below: 
+    ```sh
+      example_doc = {
+        'key_1': "value_1",
+        "key_2": "value_2"
+        }
+    ```
+
+
+3. You should specify the file path of the database document as shown below: 
+```sh
+   db.db_file = 'file_path'
+```
+
+
+
+
+
+4.
+5.  
 
 _For more examples, please refer to the [Documentation](https://docs.python.org/3/library/pickle.html)_
 
