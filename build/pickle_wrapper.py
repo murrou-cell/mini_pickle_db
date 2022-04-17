@@ -34,9 +34,31 @@ class p_wrapper:
                 else:
                     i.update({'id': 0})
                 db.append(i)
-            with open(self.file, 'wb') as f:
+            with open(self.db_file, 'wb') as f:
                 pickle.dump(db, f)
     
     def redump_db(self, full_db):
          with open(self.db_file, 'wb') as f:
                 pickle.dump(full_db, f)
+
+    def query_one(self,query:dict): #query = {'test': 2}
+        db_ = self.load()
+
+        for k, v in query.items():
+            for item in db_:
+                if item.get(k) == v:
+                    return item
+        
+        return None
+    
+    def query_many(self, query:dict): #query = {'test': 2}
+        db_ = self.load()
+
+        ret = []
+
+        for k, v in query.items():
+            for item in db_:
+                if item.get(k) == v:
+                    ret.append(item)
+        
+        return ret
