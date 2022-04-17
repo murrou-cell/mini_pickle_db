@@ -124,7 +124,14 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Here is how to framework actually functions: 
 
-1. 
+1. As a start, you must import the following modules: 
+   ```sh
+   from pickle_wrapper import p_wrapper
+   ```
+      ```sh
+   import os
+   ```
+
 2. 
 3. 
 4. 
