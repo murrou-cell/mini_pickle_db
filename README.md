@@ -199,7 +199,7 @@ db.insert(single_doc)
   ```sh
     db.query_many({'key_2': 'value'})
   ```
-  Note: It will return all the documents matching the querry.
+  Note: It will return all the documents matching the querry in a list format.
 
 
 _For more examples, please refer to the [Documentation](https://docs.python.org/3/library/pickle.html)_
