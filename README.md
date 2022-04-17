@@ -1,30 +1,4 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -33,11 +7,12 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Mini-Pickle-Database-Framework</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An easy way to build your very own small database!
     <br />
+    <!--
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -46,6 +21,7 @@
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    -->
   </p>
 </div>
 
@@ -59,19 +35,20 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
+        <!--
         <li><a href="#installation">Installation</a></li>
+        -->
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <!--
     <li><a href="#roadmap">Roadmap</a></li>
+    -->
     <li><a href="#contributing">Contributing</a></li>
+    <!--
     <li><a href="#license">License</a></li>
+    -->
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -82,18 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+This framework is used to create a light, easy to use and versatile database that fits perfectly in small projects or in larger tasks requiring a small database for some sort of data management.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -101,39 +67,39 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Below you can find a list of all major frameworks/libraries used to bootstrap this project:
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Python](https://www.python.org/)
+* [Python Pickle](https://docs.python.org/3/library/pickle.html)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+* Python version 3.9 or above
+* Pickle
+* IDE (VS Code, PyCharm, Thonny etc.)
+
+
+<!-- 
+Here we will input instructions on the installation of external modules:
 * npm
   ```sh
-  npm install npm@latest -g
+  pip install pickle
   ```
+-->
 
-### Installation
+<!-- 
+
+### Installation - Use this shit below if an installation of something is even nesessary: 
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
+<!--
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
@@ -149,21 +115,101 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+-->
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Here is how to framework actually functions: 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Initial steps:
+As a start, you must clone the repository and use the pickle_wrapper.py file to import the needed modules as shown below: 
+  ```sh
+  from pickle_wrapper import p_wrapper
+  ```
+  1.1. You can initiate the database class using the: 
+  ```sh
+    db = p_wrapper()
+  ```
+  1.2. You should specify the file path of the database document as shown below: 
+  ```sh
+    db.db_file = 'file_path'
+  ```
+  Note: The Wrapper will automatically create the file, but not the folder, so one must be created manually. 
+
+
+
+2. Document Structure: 
+
+  2.1. The documents follow a simple Python dictionary format as shown below: 
+  ```sh
+    example_doc = {
+      'key_1': "value_1",
+      "key_2": "value_2"
+      }
+  ```
+
+
+3. Database Usage:
+  2.1. How to insert a single document in the database: 
+  ```sh
+  single_doc = {
+'key_1': "value_1",
+'key_2': "value_2"
+}
+db.insert(single_doc)
+  ```
+  2.2. How to insert multiple documents in the database: 
+  ```sh
+  multiple_docs = [
+    {
+        'key_1': "value_1",
+        'key_2': "value_2"
+    },
+    {
+        'key_3':  "value_3",
+        'key_4':  "value_4"
+    }
+  ]
+  db.insert(multiple_docs)
+  ```
+  Note: The database automatically assigns an ID to every document and is autoincremented.
+  ```sh
+    [{'key_1': "value_1", 'key_2': "value_2", 'id': 0}, {'key_1': "value_1", 'key_2': "value_2", 'id': 1}]
+  ```
+  Note: The data type of the multiple document database is a list of dictionaries.
+
+  2.3. How to load the database: 
+  ```sh
+    db.load()
+  ```
+  Note: It returns a list of dictionaries. 
+
+  2.4. How to query the database:
+
+  2.4.1. Query a single document: 
+  ```sh
+    db.query_one({'key_2': 'value'})
+  ```
+  Note: It will return only the first document it finds. 
+
+  2.4.2. Query a multiple documents:
+  ```sh
+    db.query_many({'key_2': 'value'})
+  ```
+  Note: It will return all the documents matching the querry in a list format.
+
+
+_For more examples, please refer to the [Documentation](https://docs.python.org/3/library/pickle.html)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- ROADMAP -->
+<!-- ROADMAP - Not sure if we need this shit for now: 
+
 ## Roadmap
 
 - [x] Add Changelog
@@ -178,7 +224,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+-->
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -198,21 +244,22 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE -->
+<!-- LICENSE
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+-->
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Marin Dragolov - murrou13@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/murrou-cell/mini_pickle_db](https://github.com/murrou-cell/mini_pickle_db)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -223,31 +270,12 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Configuration Parser Framework](https://github.com/murrou-cell/configuration_parser)
+<!--
+* [Shit I've used 2](link)
+* [Shit I've used 3](link)
+* [Shit I've used 4](link)
+* [Shit I've used 5](link)
+-->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
