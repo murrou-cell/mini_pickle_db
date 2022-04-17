@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This framework is ...
+This framework is used to create a light, easy to use and versatile database that fits perfectly in small projects or in larger tasks requiring a small database for some sort of data management.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
