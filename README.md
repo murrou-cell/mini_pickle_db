@@ -35,13 +35,24 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+<<<<<<< HEAD
+=======
+      </ul>
+      <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <!--
-        <li><a href="#installation">Installation</a></li>
-        -->
       </ul>
     </li>
-    </br>
+    <!--
+    <li>
+      <ul>
+>>>>>>> ad76c54717b8f40799287db9effcff449914e4cf
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        
+        <li><a href="#installation">Installation</a></li>
+        
+      </ul>
+    </li>
+    -->
     <li><a href="#usage">Usage</a></li>
     <!--
     <li><a href="#roadmap">Roadmap</a></li>
