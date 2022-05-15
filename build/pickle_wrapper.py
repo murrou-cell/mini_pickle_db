@@ -62,3 +62,13 @@ class p_wrapper:
                     ret.append(item)
         
         return ret
+
+    def delete(self, query:dict):
+        db_ = self.load()
+        new_db = []
+        for k, v in query.items():
+            for item in db_:
+                if item.get(k) != v:
+                    new_db.append(item)
+        self.redump_db(new_db)
+        
