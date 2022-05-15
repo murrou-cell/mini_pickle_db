@@ -156,8 +156,8 @@ As a start, you must clone the repository and use the pickle_wrapper.py file to 
   2.1. How to insert a single document in the database: 
   ```sh
   single_doc = {
-'key_1': "value_1",
-'key_2': "value_2"
+"key_1": "value_1",
+"key_2": "value_2"
 }
 db.insert(single_doc)
   ```
@@ -165,19 +165,22 @@ db.insert(single_doc)
   ```sh
   multiple_docs = [
     {
-        'key_1': "value_1",
-        'key_2': "value_2"
+        "key_1": "value_1",
+        "key_2": "value_2"
     },
     {
-        'key_3':  "value_3",
-        'key_4':  "value_4"
+        "key_3":  "value_3",
+        "key_4":  "value_4"
     }
   ]
   db.insert(multiple_docs)
   ```
   Note: The database automatically assigns an ID to every document and is autoincremented.
   ```sh
-    [{'key_1': "value_1", 'key_2': "value_2", 'id': 0}, {'key_1': "value_1", 'key_2': "value_2", 'id': 1}]
+    [
+      {"key_1": "value_1", "key_2": "value_2", "id": 0}, 
+      {"key_1": "value_1", "key_2": "value_2", "id": 1}
+    ]
   ```
   Note: The data type of the multiple document database is a list of dictionaries.
 
