@@ -63,7 +63,7 @@ class p_wrapper:
         
         return ret
 
-    def delete(self, query:dict):
+    def delete_all(self, query:dict):
         db_ = self.load()
         new_db = []
         for k, v in query.items():
