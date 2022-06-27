@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/murrou-cell/mini_pickle_db">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/murrou-cell/mini_pickle_db/raw/main/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Mini-Pickle-Database-Framework</h3>
@@ -26,6 +26,7 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -65,6 +66,10 @@ Below you can find a list of all major frameworks/libraries used to bootstrap th
 * Pickle
 * IDE (VS Code, PyCharm, Thonny etc.)
 
+### Instalation
+  ```sh
+  python -m pip install mini_pickle_db
+  ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -72,17 +77,17 @@ Below you can find a list of all major frameworks/libraries used to bootstrap th
 Here is how to framework actually functions: 
 
 1. Initial steps:
-As a start, you must clone the repository and use the pickle_wrapper.py file to import the needed modules as shown below: 
+
   ```sh
-  from pickle_wrapper import p_wrapper
+  from mini_pickle_db.pickle_db import db
   ```
   1.1. You can initiate the database class using the: 
   ```sh
-    db = p_wrapper()
+    database = db()
   ```
   1.2. You should specify the file path of the database document as shown below: 
   ```sh
-    db.db_file = 'file_path'
+    database.db_file = 'file_path'
   ```
   Note: The Wrapper will automatically create the file, but not the folder, so one must be created manually. 
 
@@ -93,7 +98,7 @@ As a start, you must clone the repository and use the pickle_wrapper.py file to 
   2.1. The documents follow a simple Python dictionary format as shown below: 
   ```sh
     example_doc = {
-      "key_1": "value_1",
+      'key_1': "value_1",
       "key_2": "value_2"
       }
   ```
@@ -133,7 +138,7 @@ db.insert(single_doc)
 
   2.3. How to load the database: 
   ```sh
-    db.load()
+    database.load()
   ```
   Note: It returns a list of dictionaries. 
 
@@ -141,27 +146,24 @@ db.insert(single_doc)
 
   2.4.1. Query a single document: 
   ```sh
-    db.query_one({'key_2': 'value'})
+    database.query_one({'key_2': 'value'})
   ```
   Note: It will return only the first document it finds. 
 
   2.4.2. Query a multiple documents:
   ```sh
-    db.query_many({'key_2': 'value'})
+    database.query_many({'key_2': 'value'})
   ```
   Note: It will return all the documents matching the querry in a list format.
 
   2.5. How to delete document:
   ```sh
-    db.delete({'key': 'value'})
+    database.delete_all({'key': 'value'})
   ```
   Note: It will delete all the documents matching the querry in a list format.
 _For more examples, please refer to the [Documentation](https://docs.python.org/3/library/pickle.html)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -180,17 +182,6 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- LICENSE
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
--->
-
-
 <!-- CONTACT -->
 ## Contact
 
@@ -206,14 +197,13 @@ Project Link: [https://github.com/murrou-cell/mini_pickle_db](https://github.com
 ## Acknowledgments
 <!--
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-* [Configuration Parser Framework](https://github.com/murrou-cell/configuration_parser)
--->
 
-<!--
-* [Shit I've used 2](link)
-* [Shit I've used 3](link)
-* [Shit I've used 4](link)
-* [Shit I've used 5](link)
+* [Configuration Parser Framework](https://github.com/murrou-cell/configuration_parser)
+
+* [ I've used 2](link)
+* [ I've used 3](link)
+* [ I've used 4](link)
+* [ I've used 5](link)
 -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
