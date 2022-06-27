@@ -98,7 +98,7 @@ Here is how to framework actually functions:
   2.1. The documents follow a simple Python dictionary format as shown below: 
   ```sh
     example_doc = {
-      'key_1': "value_1",
+      "key_1": "value_1",
       "key_2": "value_2"
       }
   ```
