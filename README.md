@@ -206,7 +206,7 @@ db.insert(single_doc)
 
   2.5. How to delete document:
   ```sh
-    db.delete_all({'key': 'value'})
+    db.delete({'key': 'value'})
   ```
   Note: It will delete all the documents matching the querry in a list format.
 _For more examples, please refer to the [Documentation](https://docs.python.org/3/library/pickle.html)_
