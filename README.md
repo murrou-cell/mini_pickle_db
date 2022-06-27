@@ -66,7 +66,7 @@ Below you can find a list of all major frameworks/libraries used to bootstrap th
 * Pickle
 * IDE (VS Code, PyCharm, Thonny etc.)
 
-## Instalation
+## Installation
   ```sh
   python -m pip install mini_pickle_db
   ```
