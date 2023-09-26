@@ -185,8 +185,6 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Marin Dragolov - murrou13@gmail.com
-
 Project Link: [https://github.com/murrou-cell/mini_pickle_db](https://github.com/murrou-cell/mini_pickle_db)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
